@@ -1,4 +1,5 @@
 
+@import url('/index.html');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;1,100&family=Oswald:wght@500&display=swap');
 /*
 #edf0f1 palabras principales
@@ -192,7 +193,7 @@ header h1 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/background-plans1.png);
+    background-image: url(./../assets/background-plans1.png);
     background-size: cover;
     overflow: hidden;
 }
