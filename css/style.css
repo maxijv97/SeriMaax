@@ -83,7 +83,7 @@ header h1 {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image:linear-gradient(to top, #000 0%, transparent 20%), url(/assets/fondoImagen.jpg); 
+    background-image:linear-gradient(to top, #000 0%, transparent 20%), url(../assets/fondoImagen.jpg); 
     background-position: left top;  
 }
 
@@ -192,7 +192,7 @@ header h1 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url(/assets/background-plans1.png);
+    background-image: url(../assets/background-plans1.png);
     background-size: cover;
     overflow: hidden;
 }
