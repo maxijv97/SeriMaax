@@ -1,0 +1,541 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;1,100&family=Oswald:wght@500&display=swap');
+/*
+#edf0f1 palabras principales
+#F600FF botones
+#CB71F9
+#AF0AF0
+#7261DD letras para footer
+
+#030328 degrade fondo
+#350F57 fondo degradado
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;    /* Poner el tamaño de letra en 16px */
+    overflow-x: hidden;     /* No dejar que se haga scroll en x */
+
+    /*  */
+}   
+header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #030328;
+    width: 100vw;
+    height: 10vh;
+    overflow-y: hidden;
+}
+
+header h1 { 
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #edf0f1;
+}
+
+.button-sus{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.button-sus {
+    padding: 5px 20px;
+    background-color: #842DD0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-sus:hover{
+    background-color: #9936f0;
+}
+
+.cancelacion-flexible{
+    color:#842DD0;
+}
+
+/*------------------------Home ------------------------------*/
+.home{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(to top, #000 0%, transparent 20%), url(/Assets/fondoImagen.jpg); 
+    background-position: left top;  
+}
+
+
+.Welcome-div{
+    width: 50%;
+    height: 100%;
+}
+
+.titulo-descatado{
+    font-family:'Exo 2', sans-serif;
+    font-weight:600;
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    color: #edf0f1;
+}
+.texto-promocional{
+    font-family:'Exo 2', sans-serif;
+    font-weight: 400;
+    color: #d1d4d4;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    width: 70%;
+}
+
+.cancelacion-flexible{
+    font-family:'Exo 2', sans-serif;
+    font-weight:600;
+    font-size: 1.2rem;
+}
+
+.Savings{
+    width: 50%;
+    height: 100%;
+}
+
+.destacar-ahorro{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top: 12rem;
+    color: #F600FF;
+    margin-left: 20rem;
+}
+.destacar-ahorro2{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #D5EF14; 
+    margin-left: 22rem;
+    margin-top: 5rem;
+}
+
+.Savings p{
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 9.5rem;
+    margin-left: 19rem;
+    font-weight: 300;
+    color: #edf0f1;
+    margin-bottom: 2rem;
+}
+
+.ul-home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.ul-home li{
+   margin: 1rem;
+}
+
+.Savings-button{
+    margin-left: 26rem;
+}
+
+
+
+
+
+/* -----------------------------------------Plans--------------------------------------------------------*/
+
+/* Este bloque de código CSS define los estilos para la sección "plans", que contiene tarjetas de planes de pago:
+
+.plans: Se configura para ser un contenedor flexible, centrando su contenido tanto horizontal como verticalmente. El ancho y alto se establecen en el 100% del ancho y alto del viewport, y se utiliza una imagen de fondo con ajuste automático de tamaño para cubrir el área.
+
+.container: Establece que este contenedor es flexible, lo que es  útil para organizar el contenido dentro de la sección "plans".
+
+.card: Define el estilo de las tarjetas de planes. Se les da un ancho y alto fijo, un margen entre ellas y se les aplica un borde, una pequeña sombra y un borde redondeado para un aspecto de tarjeta. El desbordamiento se oculta para mantener un aspecto limpio.
+
+.card-p: Establece la fuente, peso y tamaño de fuente del texto en las tarjetas. Además, se definen márgenes para el espaciado.
+
+.p-descuento: Configura el estilo del texto que muestra el descuento, ajustando los márgenes y el color del texto.
+
+.card-button: Aplica un margen superior a los botones en las tarjetas para ajustar su posición.
+
+.card button: Define el estilo de los botones en las tarjetas, estableciendo su ancho, alto, margen y color de fondo. Además, se agrega una pequeña sombra para dar profundidad. En este caso, los botones tienen un color de fondo morado. */
+
+.plans{
+    display: flex;
+    flex-direction: column; /* Alinea verticalmente los elementos */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Assets/background-plans1.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.plans-header {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Margen superior para separar del borde superior */
+}
+
+.plans-p{
+    margin-top: 3rem;
+    color: #d1d4d4;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+   width: 200px;
+   height: 250px;
+   margin: 100px;
+   border: 2px solid #F600FF;
+   border-radius: 5px;
+   
+   overflow: hidden;
+   
+}
+/*box-shadow:5px 5px 20px #030328; */
+.card:hover{
+    box-shadow: 5px 5px 20px #F600FF;
+}
+
+.card-p{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 2rem; 
+    margin-left: 2.5rem;
+    color: #edf0f1;
+}
+
+.p-descuento{
+    margin: 5px;
+    margin-left: 2rem;
+    color:#7261DD;
+}
+.card-button{
+    margin-top: 50px !important;
+}
+
+.card button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 2.6rem;
+    background-color: #842DD0;
+    border:none;
+    color:#edf0f1;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.card button:hover{
+    background-color: #F600FF;
+}
+
+
+
+
+/* ----------------------------------------slider-----------------------------------------------------*/  
+
+.slider-card{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#030328,#350F57);
+}
+
+.fig-card{
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+
+.img-slider {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.slider-card img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+
+/* ----------------------------------------footer--------------------------------------------------------*/
+
+footer {
+    background-color: #350F57;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+
+.logo {
+    width: 100px; 
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
+    margin:20px
+}
+.footer-column {
+    text-align: left;
+}
+
+/* Estilos de los enlaces */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 100;
+    text-decoration: none;
+    color: #7261DD;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #030328; /* Cambia el color al pasar el mouse sobre los enlaces */
+}
+
+
+
+/* Media query */
+@media screen and (max-width:1200px) {
+     /* NavBar */
+
+
+     header{
+        padding: 10px;
+    }
+
+
+    /* Home */
+
+    .home{
+        display: flex;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    
+    .titulo-descatado{
+        font-size: 1.5rem;
+        padding-left:2.5rem ;
+        margin-top: 150rem;
+    }
+    .texto-promocional{
+        margin-top: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .cancelacion-flexible{
+        font-size: 1.2rem;
+        color: #D5EF14;
+    }
+     
+    .Savings{
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+    
+    .destacar-ahorro{
+        font-size: 1.6rem;
+        margin-top: 3rem;
+        margin-right: 3rem;
+    }
+    .destacar-ahorro2{
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        margin-top: 6rem;
+    }
+    .Savings p{
+        margin-top: 5rem;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .ul-home{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        padding-left: 2rem;
+    }
+    
+    .ul-home li{
+       margin: 1rem;
+    }
+
+    .Savings-button{
+        margin-left: 22rem;
+    }
+
+
+    /* Plans */
+
+
+    .plans {
+        padding: 60px; 
+        display: flex;
+        justify-content: space-evenly;
+        height: 60vh;
+
+      }
+    
+      .plans-p {
+        font-size: 2.5rem;
+       
+      }
+    
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    
+      .card {
+        width: 200px;
+        margin: 20px;
+      }
+    
+      .card-p {
+        font-size: 2.2rem; /
+      }
+
+
+     /* footer */
+     .footer-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-column {
+        text-align: center; 
+    }
+
+    .footer-links li {
+        margin-bottom: 5px;
+    }
+
+    .footer-links a {
+        font-size: 14px; 
+    }
+
+}
+
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px, que incluye la mayoría de los celulares) */
+@media screen and (max-width: 768px) {
+    header{
+      padding:5px;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+
+    .nav-bar{
+        display: flex;
+        margin-left: 10px;
+        width: 40%;
+    }
+
+     /* Home */
+
+     .home{
+        background-size: cover;
+    }   
+
+    .Welcome-div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 80%;
+        overflow-y: hidden;
+    }
+    .Savings{
+        display: none;
+    }
+
+    .titulo-descatado{
+        margin-top:5rem;
+        margin: left -1rem;
+    } 
+
+    .texto-promocional{
+        margin-left:none;
+    }
+
+
+
+    /* plans */
+
+    .plans {
+        padding: 20px; 
+        display: flex;
+        justify-content: space-evenly;
+        height: 80%;
+      }
+
+    .plans-p {
+        font-size: 1.5rem;
+      }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .slider-card{
+        display: none;
+    }
+}
+
